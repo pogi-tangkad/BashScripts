@@ -123,7 +123,7 @@ recursive_tree() {
         recursive_tree "$1/${i}" $(( $2 + 2 )); \
       } \
       || {
-        printf %$2.0s"033[35m┕┉"; \
+        printf %$2.0s"\033[35m┕┉"; \
         printf "\033[31m"; echo "${i} ~ directory inaccessible"; \
       }
     } || {
